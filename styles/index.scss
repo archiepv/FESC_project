@@ -1,0 +1,123 @@
+//---SASS DOCUMENT SECTION---//
+$accent: #4E96BE;
+$main-font: Leelawadee UI, "Open Sans", Helvetica, Arial, sans-serif;
+
+@mixin buttons {
+	width: 10rem;
+	height: 10rem;
+	font-size: 2rem;
+	border-radius: 50%;
+	border: .6rem solid #EACA44;
+	background-color: $accent;
+	padding: 2.5rem 0 0 0;
+	box-shadow: gray 2px 2px 6px;
+	z-index: 1;
+	clear: both;
+
+	ul {
+		list-style-type: none;
+	}
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+  font-family: $main-font;
+}
+
+.container-fluid {
+	background-image: url("../images/FESC_bg.png"), linear-gradient(to top, #DD794E 2%, #ffffff 2%);
+	background-repeat: no-repeat;
+	background-size: 101% auto;
+	background-position: center top;
+	max-width: 100%;
+  margin: 0 auto;
+}
+
+/*---HEADER SECTION---*/
+.logo {
+	display: flex;
+  margin: 0 auto;
+	justify-content: center;
+}
+
+/*---MOVING BACKGROUND---*/
+.moving-bg {
+	background-color: #DD794E;
+	margin: 1rem 0 0 0;
+	width: 100%;
+	height: 30rem;
+	z-index: -1;
+}
+
+/*---NAVIGATION MODULE WITH CONTACT INFO SECTION---*/
+main.row {
+	transition: ease all 1s;
+	justify-content: space-between;
+}
+
+	.floater[class^="col-"] {
+		width: auto;
+		height: auto;
+		text-align: center;
+		list-style-type: none;
+		transition: ease all .5s;
+	}
+
+nav ul > li:nth-child(1) {
+	@include buttons;
+}
+
+nav ul > li:nth-child(2) {
+	@include buttons;
+}
+
+nav ul > li:nth-child(3) {
+	@include buttons;
+}
+
+/*---ASIDE SECTION---*/
+
+/*---FESC INFORMATION SECTION---*/
+article.row {
+	display: flex;
+	margin-top: 2rem;
+	clear: both;
+}
+
+h1 {
+  padding: 1rem;
+  font-size: 3.7rem;
+	font-weight: bold;
+  text-align: left;
+  color: $accent;
+}
+
+.focus-word {
+	color: $accent;
+}
+
+article.row {
+	font-size: 1.5rem;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+	section[class^="col-"] {
+		padding: .2em;
+		margin: 1rem;
+		width: 50rem;
+	}
+
+article img {
+	width: 100%;
+}
+
+p {
+	margin-top: 2rem;
+	padding: .5rem;
+	color: #2C7198;
+	font-weight: 100;
+}
