@@ -26,10 +26,22 @@ function drawBasic() {
       var options = {
         'title':'FLORIDA RENEWABLE PRODUCTION',
         hAxis: {
-          title: 'Year'
+          title: 'Year',
+          titleTextStyle: {
+            color: "#4E96BE",
+            fontSize: 18,
+            bold: true,
+            italic: false
+          }
         },
         vAxis: {
-          title: 'Billion Btu'
+          title: 'Billion Btu',
+          titleTextStyle: {
+            color: "#4E96BE",
+            fontSize: 18,
+            bold: true,
+            italic: false
+          }
         }
       };
 
