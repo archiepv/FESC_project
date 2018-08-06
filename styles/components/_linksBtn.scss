@@ -1,0 +1,22 @@
+/*--LINKS Styling--*/
+a {
+  font-weight: bold;
+  color: #234659;
+  text-decoration: none;
+}
+
+a:link {
+    color: #234659;
+}
+
+a:visited {
+    color: $accent;
+}
+
+a:hover {
+    color: rgba(201, 143, 123, .5);
+}
+
+a:active {
+    color: rgba(221, 121, 78, 0.5);
+}

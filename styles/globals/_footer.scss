@@ -1,0 +1,98 @@
+/*--Footer Section .scss--*/
+footer {
+	display: inline-block;
+	justify-content: center;
+	margin: 10em 0 0 16.5em;
+	padding: 1rem;
+	font-size: 1.2rem;
+	width: 80%;
+	height: auto;
+	border: .4em solid $accent;
+	box-shadow: $castShadow;
+	position: absolute;
+}
+
+@import "components/linksBtn";
+
+/*---MEDIA QUERY for small device---*/
+@media screen and (min-width: 300px) and (max-width: 767px) {
+    section[class*="col-"] {
+        width: 100%;
+    }
+
+		footer {
+			display: inline-block;
+			text-align: center;
+			margin: 1em 0 0 0;
+			padding: 1rem;
+			width: 100%;
+			height: auto;
+			background: #ffffff;
+			border: .4em solid $accent;
+			box-shadow: $castShadow;
+		}
+
+		@import "components/linksBtn";
+}
+
+/*---MEDIA QUERY for tablets---*/
+@media screen and (min-width: 768px) and (max-width: 900px) {
+    section[class*="col-"] {
+        width: 100%;
+    }
+
+		footer {
+			display: inline-block;
+			text-align: center;
+			margin: 1em 0 0 0;
+			padding: 1rem;
+			width: 100%;
+			height: auto;
+			border: .4em solid $accent;
+			box-shadow: $castShadow;
+			position: relative;
+		}
+
+		@import "components/linksBtn";
+}
+
+/*---MEDIA QUERY for tablets---*/
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    section[class*="col-"] {
+        width: 100%;
+    }
+
+		footer {
+			display: inline-block;
+			text-align: center;
+			margin: 1em 0 0 0;
+			padding: 1rem;
+			width: 100%;
+			height: auto;
+			border: .4em solid $accent;
+			box-shadow: $castShadow;
+			position: relative;
+		}
+
+		@import "components/linksBtn";
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1900px) {
+    section[class*="col-"] {
+        width: 100%;
+    }
+
+		footer {
+			display: inline-block;
+			text-align: left;
+			margin: 1em 0 0 0;
+			padding: 1rem;
+			width: 100%;
+			height: auto;
+			border: .4em solid $accent;
+			box-shadow: $castShadow;
+			position: relative;
+		}
+
+		@import "components/linksBtn";
+}

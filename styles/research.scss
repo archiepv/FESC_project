@@ -1,120 +1,70 @@
-//---SASS DOCUMENT SECTION---//
-$accent: #4E96BE;
+/*---SASS DOCUMENT SECTION---*/
 $main-font: Leelawadee UI, "Open Sans", Helvetica, Arial, sans-serif;
+@import "components/accentColor";
+@import "components/castShadow";
 
-@mixin buttons {
-	width: 10rem;
-	height: 10rem;
-	font-size: 2rem;
-	border-radius: 50%;
-	border: .6rem solid #EACA44;
-	background-color: $accent;
-	padding: 2.5rem 0 0 0;
-	box-shadow: gray 2px 2px 6px;
-	z-index: 1;
-	clear: both;
-
-	ul {
-		list-style-type: none;
-	}
-}
-
+/*---MAIN BODY---*/
 * {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	height: auto;
 	box-sizing: border-box;
   font-family: $main-font;
+
+		*, *:before, *:after {
+	  	box-sizing: inherit;
+		}
 }
 
-.container-fluid {
-	background-image: url("../images/FESC_bg.png"), linear-gradient(to top, #DD794E 2%, #ffffff 2%);
-	background-repeat: no-repeat;
-	background-size: 101% auto;
-	background-position: center top;
-	max-width: 100%;
-  margin: 0 auto;
+/*---Row and Columns Control Section---*/
+.row::after {
+    content: "";
+    clear: both;
+    display: inline-block;
 }
 
-/*---HEADER SECTION---*/
-.logo {
-	display: flex;
-  margin: 0 auto;
-	justify-content: center;
-}
-
-/*---MOVING BACKGROUND---*/
-.moving-bg {
-	background-color: #DD794E;
-	margin: 1rem 0 0 0;
-	width: 100%;
-	height: 30rem;
-	z-index: -1;
-}
-
-/*---NAVIGATION MODULE WITH CONTACT INFO SECTION---*/
-main.row {
-	transition: ease all 1s;
-	justify-content: flex-start;
-	position: absolute;
-}
-
-	ul[class^="col-"] {
-		width: auto;
-		height: auto;
-		text-align: center;
-		list-style-type: none;
-		transition: ease all .5s;
+	[class*="col-"] {
+    float: left;
+		padding: 0;
 	}
 
-nav ul > li:nth-child(1) {
-	@include buttons;
-}
+/*---Columns Control Area for Desktop size---*/
+li.col-1 {width: 8.33%;}
+li.col-2 {width: 8.33%;}
+li.col-3 {width: 8.33%;}
+section.col-4 {width: 40.33%;}
+section.col-5 {width: 80.33%;}
+section.col-6 {width: 55%;}
+section.col-7 {width: 60.33%;}
+.col-8 {width: 85.33%;}
+.col-9 {width: 8.33%;}
+.col-10 {width: 6.33%;}
 
-nav ul > li:nth-child(2) {
-	@include buttons;
-}
+/*---I created a seperate .scss for the background to make it easier to change and play around with the design---*/
+@import "globals/mainBg";
 
-nav ul > li:nth-child(3) {
-	@include buttons;
-}
+/*---HEADER SECTION has it's own .scss file under globals. This is in case it needs to change or added some more information---*/
+@import "globals/header";
 
-/*---ASIDE SECTION---*/
+/*---NAV SECTION. It has it's own .scss inside the global folder---*/
+@import "globals/worldNav";
 
-/*---FESC INFORMATION SECTION---*/
-article.row {
-	display: flex;
-	margin-top: 2rem;
-	clear: both;
-}
+/*---This is a design that is part of the background, but changes position and height in each pages---*/
+@import "components/researchBlock";
 
-h1 {
-  padding: 1rem;
-  font-size: 3.7rem;
-	font-weight: bold;
-  text-align: left;
-  color: $accent;
-}
 
-article.row {
-	font-size: 1.5rem;
-	margin-top: 5rem;
-	text-align: center;
-}
+/*---FESC INFORMATION SECTION for the home page---*/
+@import "components/researchInfo";
 
-	section[class^="col-"] {
-		padding: .2em;
-		margin: 1rem;
-		width: 50rem;
+@import "components/chartAsideRd";
+
+/*---FOOTER SECTION---*/
+@import "globals/footer";
+
+/*---MEDIA QUERY for small device---*/
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+	[class*="col-"] {
+			width: 100%;
 	}
-
-article img {
-	width: 100%;
-}
-
-p {
-	margin-top: 2rem;
-	padding: .5rem;
-	color: #2C7198;
-	font-weight: 100;
 }
