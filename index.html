@@ -8,71 +8,86 @@
 		<meta name="viewport" content="width-device-width, initial-scale= 1.0">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
+		<!--LINKS TO STYLES FOLDER-->
 		<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="./styles/main.css">
+		<link rel="stylesheet" type="text/css" href="./styles/index.css">
 
 		<title>Florida Energy Systems Consortium</title>
 
 	</head>
 
-	<body>
-		<header>
-			<a href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
+	<body class="siteContainer">
+		<header class="row">
+			<a class="logo" href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
 		</header>
 
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="education.html">Education</a></li>
+			<ul class="row navBar">
+				<li class="col-1 homeBtn"><a href="index.html">Home</a></li>
+				<li class="col-2 researchBtn"><a href="research.html">Research</a></li>
+				<li class="col-3 educationBtn"><a href="education.html">Education</a></li>
 			</ul>
 		</nav>
 
-		<!--- Needs Editing --->
-		<article>
-			<section>
-				<h1>FESC Bringing Energy Solutions to Florida, the Nation and the World</h1>
-				<p>The Florida Energy Systems Consortium (FESC) was created by the Florida State government to promote collaboration among the energy
-					experts at its 12 supported universities to share energy-related expertise. The consortium assists the state in the development and
-					implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The Consortium was charged to
-					‘perform research and development on innovative energy systems that lead to alternative energy strategies, improved energy efficiencies,
-					and expanded economic development for the state‘. The legislature appropriated funding for research at five of the universities as well
-					as support for education, outreach, and technology commercialization.
-				</p>
-
-				<p>Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy
-					workforce, and guide economic development.
-				</p>
-
-				<p>Through collaborative research and development across the State University System and the industry, the goal of the consortium is to
-					become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:
-				</p>
-
-				<p>(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</p>
-
-				<p>(b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization
-					of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators,
-					industrial parks, and industry-driven research centers.
-				</p>
-
-				<p>(c) Provide a state resource for objective energy systems analysis.
-				</p>
-
-				<p>(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.
-				</p>
-			</section>
-
-			<section>
-				<img src="./images/home-img.png" alt="Wind Turnbines built at the ocean">
+		<!--This is the title information for each information section of page-->
+		<article class="row headerTitle">
+			<section class="col-12">
+				<h1>FESC Bringing Energy Solutions</h1>
 			</section>
 		</article>
 
-		<!--- I want this to float on the right side (bottom or mid) for every page, instead of making it a footer --->
-		<aside>
-			<h2>Copyright 2008 - 2018 Florida Energy Systems Consortium</h2>
-			<a href="#">Contact</a>
-			<a href="#">Site Map</a>
-		</aside>
+		<!--This is a block of strip that changes position on each page-->
+		<article class="row movingBgHome ">
+			<section class="col-12">&nbsp;</section>
+	 	</article>
+
+		<!--INFORMATION ABOUT FESC-->
+		<!--H1 TAGS and FESC word Will have accent color-->
+		<article class="row mainInfo">
+			<section class="col-4 firstBlock">
+				<p class="para1 capLetter">The Florida Energy Systems Consortium <span class="focus-word">(FESC)</span> was created by the Florida State government to promote
+					collaboration among the energy experts at its 12 supported universities to share energy-related expertise. The consortium assists the
+					state in the development and implementation of an environmentally compatible, sustainable, and efficient energy strategic plan. The
+					Consortium was charged to ‘perform research and development on innovative energy systems that lead to alternative energy strategies,
+					improved energy efficiencies, and expanded economic development for the state‘. The legislature appropriated funding for research at
+					five of the universities as well as support for education, outreach, and technology commercialization.
+				</p>
+
+				<p class="para2 capLetter">Overarching to the Consortium’s research strategy is an energy systems approach to identify innovation opportunities, prepare an energy
+					workforce, and guide economic development.
+				</p>
+
+				<p class="para3 capLetter">Through collaborative research and development across the State University System and the industry, the goal of the consortium is to
+					become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:
+				</p>
+
+
+					<p class="para4 indentLet">(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</p>
+
+					<p class="para5 indentLet">(b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization
+						of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators,
+						industrial parks, and industry-driven research centers.
+					</p>
+
+					<p class="para6 indentLet">(c) Provide a state resource for objective energy systems analysis.
+					</p>
+
+					<p class="para7 indentLet">(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.
+					</p>
+
+			</section>
+
+			<section class="col-5 secondBlock">
+				<img src="./images/wind1.jpg" alt="Wind Turnbines built at the ocean">
+			</section>
+		</article>
+
+		<!--This is the FOOTER SECTION. I'm trying to make it float on the right side, we'll see...-->
+		<footer class="row">
+			<h4 class="col-7">Copyright 2008 - 2018 . Florida Energy Systems Consortium</h4>
+			<a class="col-8 contact " href="#">Contact</a>
+			<a class="col-9 siteMap" href="#">Site Map</a>
+		</footer>
 
 		<script></script>
 	</body>

@@ -8,37 +8,49 @@
 		<meta name="viewport" content="width-device-width, initial-scale= 1.0">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
+		<!---LINKS TO STYLES FOLDER AND BOOTSTRAP--->
 		<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="./styles/main.css">
-
+		<link rel="stylesheet" type="text/css" href="./styles/education.css">
 		<title>Florida Energy Systems Consortium</title>
 
 	</head>
 
-	<body>
-		<header>
-			<a href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
+	<body class="siteContainer">
+		<header class="row">
+			<a class="logo" href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
 		</header>
 
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="education.html">Education</a></li>
+			<ul class="row navBar">
+				<li class="col-1 homeBtn"><a href="index.html">Home</a></li>
+				<li class="col-2 researchBtn"><a href="research.html">Research</a></li>
+				<li class="col-3 educationBtn"><a href="education.html">Education</a></li>
 			</ul>
 		</nav>
 
-		<!--- Needs Editing --->
+		<!--This is the title information for each information section of page-->
+		<article class="row headerTitle">
+			<section class="col-12">
+				<h1>FESC Education and opportunities</h1>
+			</section>
+		</article>
+
+		<!---This is a block of strip that changes position on each page--->
 		<article>
-			<section>
-				<h1>Education and Opportunities</h1>
-				<p>Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable
+			<section class="row movingBgEducation">&nbsp;</section>
+		</article>
+
+
+		<!---INFORMATION ABOUT FESC-EDUCATION--->
+		<article class="educationInfo row">
+			<section class="col-4">
+				<p class="capLetter">Florida’s utilities have predicted that the State’s energy use will increase significantly in the coming years. Energy efficiency and renewable
 					energy generation are vital to meeting this demand. FESC’s statewide education program will produce a workforce trained to meet Florida’s energy
 					needs. Explore the sub-menus on the left side of this page for Florida energy education opportunities sorted by discipline, institution, and
 					degree program, along with training providers and other energy education-related resources.
 				</p>
 
-				<p>FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors
+				<p class="capLetter">FESC’s training and educational efforts are aimed at multiple levels of the career ladder: community college trained technicians, bachelors
 					level students, graduate researchers, and practitioners who seek to update their existing skills. This statewide initiative is being distributed
 					across partner institutions and capitalizes on each institution’s strengths to provide educational opportunities for both the conventional power
 					generation industries and newly created energy related industries. New curricula in energy and coordinated programs across multiple universities
@@ -47,26 +59,35 @@
 					closely with the Industrial Partners Program to ensure rapid dissemination of Center research results to this important constituent group.
 				</p>
 
-				<p>The Education program has three focus areas, community college programming at the AS and certificate level, nuclear energy education, and a
+				<p class="capLetter">The Education program has three focus areas, community college programming at the AS and certificate level, nuclear energy education, and a
 					Masters degree in sustainable energy. FESC has also reached out to Florida’s youth through SAVE: Steps in Achieving Viable Energy. Part of
 					Florida 4-H Youth Development, youths ages 11-13 learn what energy is, its different forms, how it is used, and how the world is impacted by
 					energy use.
 				</p>
 			</section>
 
-			<section>
-					<img src="./images/education-img.jpg" alt="People using computers in a room.">
+			<section class="col-5 chartBlock2">
+				<aside id="chart_div">&nbsp;</aside>
 			</section>
 		</article>
 
-		<!--- I want this to float on the right side (bottom or mid) for every page, instead of making it a footer --->
-		<aside>
-			<h2>Copyright 2008 - 2018 Florida Energy Systems Consortium</h2>
-			<a href="#">Contact</a>
-			<a href="#">Site Map</a>
-		</aside>
+	<!--	<article class="row">
+			<section class="col-6">
+					<img src="./images/education-img.jpg" alt="People using computers in a room.">
+			</section>
+		</article>-->
 
-		<script></script>
+		<!--This is the FOOTER SECTION. I'm trying to make it float on the right side, we'll see...-->
+		<footer class="row">
+			<h4 class="col-7">Copyright 2008 - 2018 . Florida Energy Systems Consortium</h4>
+			<a class="col-8 contact " href="#">Contact</a>
+			<a class="col-9 siteMap" href="#">Site Map</a>
+		</footer>
+
+		<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+		<script src="./scripts/chartsEdu.js"></script>
 	</body>
 
 </html>

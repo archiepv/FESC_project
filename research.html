@@ -8,31 +8,44 @@
 		<meta name="viewport" content="width-device-width, initial-scale= 1.0">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
 
+		<!---LINKS TO STYLES FOLDER AND BOOTSTRAP--->
 		<link rel="stylesheet" type="text/css" href="./styles/normalize.css">
-		<link rel="stylesheet" type="text/css" href="./styles/main.css">
+		<link rel="stylesheet" type="text/css" href="./styles/research.css">
 
 		<title>Florida Energy Systems Consortium</title>
 
 	</head>
 
-	<body>
-		<header>
-			<a href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
+	<body class="siteContainer">
+		<header class="row">
+			<a class="logo" href="index.html"><img src="./images/fesc_logo.png" alt="Florida Energy System Logo"></a>
 		</header>
 
 		<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="research.html">Research</a></li>
-				<li><a href="education.html">Education</a></li>
+			<ul class="row navBar">
+				<li class="col-1 homeBtn"><a href="index.html">Home</a></li>
+				<li class="col-2 researchBtn"><a href="research.html">Research</a></li>
+				<li class="col-3 educationBtn"><a href="education.html">Education</a></li>
 			</ul>
 		</nav>
 
-		<!--- Needs Editing --->
+		<!--This is the title information for each information section of page-->
+		<article class="row headerTitle">
+			<section class="col-12">
+				<h1>FESC Research and Development</h1>
+			</section>
+		</article>
+
+		<!---This is a block of strip that changes position on each page--->
 		<article>
-			<section>
-				<h1>Research Vision</h1>
-				<p>The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes
+			<section class="row movingBgResearch">&nbsp;</section>
+	 	</article>
+
+		<!---INFORMATION ABOUT FESC-RESEARCH--->
+		<article class="researchInfo row">
+			<section class="col-4 firstBlock">
+				<h2>Research Vision</h2>
+				<p class="capLetter">The Florida Energy System Consortium (FESC) performs scholarly research and analysis of energy systems that contributes
 					to a sustainable energy economy for Florida. In formulating a research plan for FESC, it became obvious that while most
 					current university research was focused on specific energy components, a research gap existed from a systems perspective.
 					It was believed that combining expertise at the State universities would position university researchers to address energy
@@ -40,14 +53,15 @@
 					leader in energy research enabled by a systems approach.
 				</p>
 
-				<p>The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering
+				<p class="capLetter">The Florida Energy Systems Consortium research funding was designated for FAU, FIU, FSU, UCF, UF, and USF. The FESC Steering
 					Committee set a collaborative university research agenda that focuses on those areas that can most impact the State of Florida.
 					This agenda has an overarching strategic research direction of understanding Florida’s energy systems. By doing so, the Consortium
 					provides meaningful analyses to guide the development of a State strategic energy plan, identify opportunities for improved
 					efficiency, and assess the impact of proposed changes, all of which lead to more informed actions.
 				</p>
 
-				<h1>Strategic Research Thrusts of FESC</h1>
+			<section class="col-5 secondBlock">
+				<h2>Strategic Research Thrusts of FESC</h2>
 
 				<p>Understanding Florida’s Energy Systems (Overarching)</p>
 
@@ -62,21 +76,26 @@
 				<p>Securing our Energy Storage and Delivery Infrastructure</p>
 			</section>
 
-			<section>
-					<img src="./images/idea.jpg" alt="light bulbs">
-					<img src="./images/wind1.jpg" alt="blue sky and wind turbines">
+			<section class="col-6 chartBlock">
+				<aside id="chart_div"></aside>
+			</section>
+
+			<section class="col-7 thirdBlock">
 					<img src="./images/green.jpg" alt="biological cells">
 			</section>
 		</article>
 
-		<!--- I want this to float on the right side (bottom or mid) for every page, instead of making it a footer --->
-		<aside>
-			<h2>Copyright 2008 - 2018 Florida Energy Systems Consortium</h2>
-			<a href="#">Contact</a>
-			<a href="#">Site Map</a>
-		</aside>
+		<!--This is the FOOTER SECTION. I'm trying to make it float on the right side, we'll see...-->
+		<footer class="row">
+			<h4 class="col-8">Copyright 2008 - 2018 . Florida Energy Systems Consortium</h4>
+			<a class="col-9 contact " href="#">Contact</a>
+			<a class="col-10 siteMap" href="#">Site Map</a>
+		</footer>
 
-		<script></script>
+		<!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+		<script src="./scripts/charts.js"></script>
 	</body>
 
 </html>
