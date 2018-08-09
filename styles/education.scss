@@ -34,11 +34,12 @@ li.col-1 {width: 8.33%;}
 li.col-2 {width: 8.33%;}
 li.col-3 {width: 8.33%;}
 section.col-4 {width: 40.33%;}
-section.col-5 {width: 40.33%;}
-section.col-6 {width: 20.33%;}
-.col-7 {width: 85.33%;}
-.col-8 {width: 8.33%;}
-.col-9 {width: 6.33%;}
+section.col-5 {width: 50.33%;}
+section.col-6 {width: 55%;}
+section.col-7 {width: 60.33%;}
+.col-8 {width: 85.33%;}
+.col-9 {width: 8.33%;}
+.col-10 {width: 6.33%;}
 
 /*---I created a seperate .scss for the background to make it easier to change and play around with the design---*/
 @import "globals/mainBg";
@@ -52,11 +53,8 @@ section.col-6 {width: 20.33%;}
 /*---This is a design that is part of the background, but changes position and height in each pages---*/
 @import "components/educationBlock";
 
-
 /*---FESC INFORMATION SECTION for the home page---*/
 @import "components/educationInfo";
-
-@import "components/chartAsideEdu";
 
 /*---FOOTER SECTION---*/
 @import "globals/footer";

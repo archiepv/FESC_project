@@ -53,6 +53,7 @@ p {
 	color: #234659;
 }
 
+/*---For the image styling---*/
 article img {
 	border: .5em solid $accent;
 	margin: 0 0 0 6em;
@@ -64,7 +65,7 @@ article img {
 }
 
 /*---MEDIA QUERY for small device---*/
-@media only screen and (min-width: 300px) and (max-width: 767px) {
+@media screen and (min-width: 300px) and (max-width: 767px) {
 	[class*="col-"] {
 			width: 100%;
 			margin: 0;
@@ -124,6 +125,7 @@ article img {
 		color: #234659;
 	}
 
+	/*---For the image styling---*/
 	article img {
 		border: .4em solid $accent;
 		margin: 1em 0 0 0;
@@ -135,8 +137,7 @@ article img {
 	}
 }
 
-/*---MEDIA QUERY for old tablets---*/
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 	section[class*="col-"] {
 			width: 100%;
 	}
@@ -207,6 +208,7 @@ article img {
 		margin: 3em 0 0 0;
 	}
 
+	/*---For the image styling---*/
 	article img {
 		border: .5em solid $accent;
 		margin: -94em 0 0 0;
@@ -219,7 +221,7 @@ article img {
 }
 
 /*---MEDIA QUERY for New tablets---*/
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     section[class*="col-"] {
         width: 100%;
 		}
@@ -291,6 +293,7 @@ article img {
 			margin: 2em 0 0 0;
 		}
 
+		/*---For the image styling---*/
 		article img {
 			border: .5em solid $accent;
 			margin: -92em 0 0 0;
@@ -302,8 +305,7 @@ article img {
 		}
 }
 
-/*---MEDIA QUERY for New tablets---*/
-@media screen and (min-width: 1440px) and (max-width: 1900px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
     section[class*="col-"] {
         width: 100%;
 		}
@@ -388,11 +390,109 @@ article img {
 			margin: 1em 0 0 0;
 		}
 
+		/*---For the image styling---*/
 		article img {
 			border: .5em solid $accent;
 			margin: -53em 0 0 37em;
 			width: 50%;
 			height: auto;
+			box-shadow: $castShadow;
+			position: relative;
+			z-index: 1;
+		}
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2048px) {
+    section[class*="col-"] {
+        width: 100%;
+		}
+
+		.headerTitle {
+			padding: .5rem;
+			text-align: center;
+			margin: 3.8em 0 0 7em;
+			z-index: 1;
+			height: auto;
+
+			h1 {
+				text-align: center;
+				font-size: calc(1em + 2vw + .5vh);
+				font-weight: bold;
+				line-height: 2rem;
+				text-shadow: $castShadow;
+				color: #ffffff;
+			}
+		}
+
+		.mainInfo {
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin: -20rem 0 0 6.2rem;
+			padding: 1em;
+			background: linear-gradient(to top right,#ffffff 88%, #234659 15%);
+			width: 90%;
+			height: auto;
+			border: .5em solid #234659;
+			box-shadow: $castShadow;
+			clear: both;
+		}
+
+		.col-4 {
+				margin: 20em 0 0 0;
+		}
+
+		p {
+			margin-top: .8rem;
+			padding: .1rem;
+			letter-spacing: .1em;
+			color: #112730;
+			font-weight: 500;
+			font-size: 1.2rem;
+			text-align: center;
+
+			.focus-word {
+				color: $accent;
+			}
+		}
+
+		.capLetter::first-letter {
+			font-size: 150%;
+			font-weight: bold;
+		}
+
+		.indentLet::first-letter {
+			font-weight: bold;
+			color: #234659;
+		}
+
+		.para1 {
+			font-size: calc(.4em + .2vw + .5vh);
+			width: 50%;
+			text-align: left;
+			margin: -15em 0 0 0;
+		}
+
+		.para2 {
+			text-align: left;
+			width: 45%;
+		}
+
+		.para3 {
+			text-align: left;
+
+		}
+
+		.indentLet {
+			text-align:left;
+			margin: 1em 0 0 0;
+		}
+
+		/*---For the image styling---*/
+		article img {
+			border: .5em solid $accent;
+			margin: -41em 0 0 56em;
+			width: 43%;
+			height: 18%;
 			box-shadow: $castShadow;
 			position: relative;
 			z-index: 1;

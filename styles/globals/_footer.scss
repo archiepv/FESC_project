@@ -35,8 +35,7 @@ footer {
 		@import "components/linksBtn";
 }
 
-/*---MEDIA QUERY for tablets---*/
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     section[class*="col-"] {
         width: 100%;
     }
@@ -57,7 +56,7 @@ footer {
 }
 
 /*---MEDIA QUERY for tablets---*/
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1419px) {
     section[class*="col-"] {
         width: 100%;
     }
@@ -77,7 +76,7 @@ footer {
 		@import "components/linksBtn";
 }
 
-@media screen and (min-width: 1440px) and (max-width: 1900px) {
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
     section[class*="col-"] {
         width: 100%;
     }
@@ -88,6 +87,26 @@ footer {
 			margin: 1em 0 0 0;
 			padding: 1rem;
 			width: 100%;
+			height: auto;
+			border: .4em solid $accent;
+			box-shadow: $castShadow;
+			position: relative;
+		}
+
+		@import "components/linksBtn";
+}
+
+@media screen and (min-width: 1920px) and (max-width: 2048px) {
+    section[class*="col-"] {
+        width: 100%;
+    }
+
+		footer {
+			display: inline-block;
+			text-align: left;
+			margin: 3em 0 0 5em;
+			padding: 1rem;
+			width: 90%;
 			height: auto;
 			border: .4em solid $accent;
 			box-shadow: $castShadow;

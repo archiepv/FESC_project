@@ -18,7 +18,7 @@
 .educationInfo {
 	margin: -90.6em 0 0 20em;
 	padding: 1em;
-	background: linear-gradient(to top right,#ffffff 70%, #234659 15%);
+	background: linear-gradient(to right, #ffffff 90%, #234659 15%);
 	width: 80%;
 	height: 65rem;
 	border: .5em solid #234659;
@@ -53,14 +53,20 @@ p {
 	color: #234659;
 }
 
-article img {
-	border: .5em solid $accent;
-	margin: 0 0 0 6em;
-	width: 50%;
-	height: auto;
-	box-shadow: $castShadow;
-	position: relative;
-	z-index: 1;
+/*---For the Google Chart styling---*/
+.chartBlock2 {
+  //border: .5em solid $accent;
+  margin: 3em 0 0 45.3em;
+  font-size: 1.5rem;
+  height: auto;
+  box-shadow: $castShadow;
+  position: absolute;
+  z-index: 1;
+
+	#chart_div {
+	  width: 110%;
+	  height: 900px;
+	}
 }
 
 /*---MEDIA QUERY for small device---*/
@@ -84,18 +90,19 @@ article img {
 			font-weight: bold;
 			line-height: 2rem;
 			text-shadow: $castShadow;
-			color: #ffffff;
+			color: #234659;
 		}
 	}
 
 	.educationInfo {
 		display: inline-flex;
 		flex-wrap: wrap;
-		margin: -9em 0 0 0;
+		margin: -46em 0 0 0;
 		padding: 1em;
 		background: linear-gradient(to top right,#4E96BE 51%, #234659 15%);
 		width: 100%;
 		height: auto;
+		border: .5em solid #234659;
 		box-shadow: $castShadow;
 		clear: both;
 	}
@@ -124,28 +131,34 @@ article img {
 		color: #234659;
 	}
 
-	article img {
-		border: .4em solid $accent;
-		margin: 1em 0 0 0;
-		width: 100%;
-		height: auto;
-		box-shadow: $castShadow;
-		position: relative;
-		z-index: 1;
+	/*---For the Google Chart styling---*/
+	.chartBlock2 {
+	  //border: .5em solid $accent;
+	  margin: 3em 0 0 0;
+	  font-size: 1.5rem;
+	  height: auto;
+	  box-shadow: $castShadow;
+	  position: absolute;
+	  z-index: 1;
+
+		#chart_div {
+		  width: 100%;
+		  height: 900px;
+		}
 	}
 }
 
-/*---MEDIA QUERY for old tablets---*/
-@media only screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 	section[class*="col-"] {
 			width: 100%;
 	}
 
 	.headerTitle {
 		padding: .5rem;
-		margin: 3em 0 0 6em;
-		z-index: 1;
+		width: 100%;
+		margin: 3em 5em 0 0;
 		height: auto;
+		z-index: 1;
 
 		h1 {
 			text-align: center;
@@ -153,32 +166,28 @@ article img {
 			font-weight: bold;
 			line-height: 2rem;
 			text-shadow: $castShadow;
-			color: #ffffff;
+			color: #234659;
 		}
 	}
 
 	.educationInfo {
 		display: inline-flex;
 		flex-wrap: wrap;
-		margin: -16.3em 0 0 2.5em;
+		margin: -92em 0 0 0;
 		padding: 1em;
-		background: linear-gradient(to top right,#ffffff 88%, #234659 15%);
-		width: 90%;
+		background: linear-gradient(to top right,#4E96BE 51%, #234659 15%);
+		width: 100%;
 		height: auto;
 		border: .5em solid #234659;
 		box-shadow: $castShadow;
 		clear: both;
 	}
 
-	.col-4 {
-			margin: 20em 0 0 0;
-	}
-
 	p {
-		margin-top: .8rem;
+		margin-top: 2.5rem;
 		padding: .1rem;
 		letter-spacing: .1em;
-		color: #112730;
+		color: #ffffff;
 		font-weight: 500;
 		font-size: 1.2rem;
 		text-align: center;
@@ -198,122 +207,35 @@ article img {
 		color: #234659;
 	}
 
-	.para1 {
-		margin: 5em 0 0 0;
-	}
+	/*---For the Google Chart styling---*/
+	.chartBlock2 {
+	  //border: .5em solid $accent;
+	  margin: 36em 0 0 0;
+	  font-size: 1.5rem;
+	  height: auto;
+	  box-shadow: $castShadow;
+	  position: absolute;
+	  z-index: 1;
 
-	.para4 {
-		//position: relative;
-		margin: 3em 0 0 0;
-	}
-
-	article img {
-		border: .5em solid $accent;
-		margin: -94em 0 0 0;
-		width: 100%;
-		height: auto;
-		box-shadow: $castShadow;
-		position: relative;
-		z-index: 1;
+		#chart_div {
+		  width: 100%;
+		  height: 500px;
+		}
 	}
 }
 
 /*---MEDIA QUERY for New tablets---*/
-@media screen and (min-width: 1024px) and (max-width: 1200px) {
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
     section[class*="col-"] {
         width: 100%;
 		}
 
 		.headerTitle {
 			padding: .5rem;
-			text-align: center;
-			margin: 5em 0 0 10em;
-			z-index: 1;
-			height: auto;
-
-			h1 {
-				text-align: center;
-				font-size: calc(1em + 2vw + .5vh);
-				font-weight: bold;
-				line-height: 2rem;
-				text-shadow: $castShadow;
-				color: #ffffff;
-			}
-		}
-
-		.educationInfo {
-			display: inline-flex;
-			flex-wrap: wrap;
-			margin: -9rem 0 0 3rem;
-			padding: 1em;
-			background: linear-gradient(to top right,#ffffff 88%, #234659 15%);
-			width: 90%;
-			height: auto;
-			border: .5em solid #234659;
-			box-shadow: $castShadow;
-			clear: both;
-		}
-
-		.col-4 {
-				margin: 20em 0 0 0;
-		}
-
-		p {
-			margin-top: .8rem;
-			padding: .1rem;
-			letter-spacing: .1em;
-			color: #112730;
-			font-weight: 500;
-			font-size: 1.2rem;
-			text-align: center;
-
-			.focus-word {
-				color: $accent;
-			}
-		}
-
-		.capLetter::first-letter {
-			font-size: 150%;
-			font-weight: bold;
-		}
-
-		.indentLet::first-letter {
-			font-weight: bold;
-			color: #234659;
-		}
-
-		.para1 {
-			margin: 10em 0 0 0;
-		}
-
-		.para4 {
-			//position: relative;
-			margin: 2em 0 0 0;
-		}
-
-		article img {
-			border: .5em solid $accent;
-			margin: -92em 0 0 0;
 			width: 100%;
+			margin: 3em 5em 0 0;
 			height: auto;
-			box-shadow: $castShadow;
-			position: relative;
 			z-index: 1;
-		}
-}
-
-/*---MEDIA QUERY for New tablets---*/
-@media screen and (min-width: 1440px) and (max-width: 1900px) {
-    section[class*="col-"] {
-        width: 100%;
-		}
-
-		.headerTitle {
-			padding: .5rem;
-			text-align: center;
-			margin: 5em 0 0 5em;
-			z-index: 1;
-			height: auto;
 
 			h1 {
 				text-align: center;
@@ -321,32 +243,28 @@ article img {
 				font-weight: bold;
 				line-height: 2rem;
 				text-shadow: $castShadow;
-				color: #ffffff;
+				color: #234659;
 			}
 		}
 
 		.educationInfo {
 			display: inline-flex;
 			flex-wrap: wrap;
-			margin: -20rem 0 0 3rem;
+			margin: -91em 0 0 6.5em;
 			padding: 1em;
-			background: linear-gradient(to top right,#ffffff 88%, #234659 15%);
-			width: 90%;
+			background: #ffffff;
+			width: 80%;
 			height: auto;
 			border: .5em solid #234659;
 			box-shadow: $castShadow;
 			clear: both;
 		}
 
-		.col-4 {
-				margin: 20em 0 0 0;
-		}
-
 		p {
-			margin-top: .8rem;
+			margin-top: 1rem;
 			padding: .1rem;
 			letter-spacing: .1em;
-			color: #112730;
+			color: #234659;
 			font-weight: 500;
 			font-size: 1.2rem;
 			text-align: center;
@@ -366,35 +284,170 @@ article img {
 			color: #234659;
 		}
 
-		.para1 {
-			font-size: calc(.5em + .2vw + .5vh);
-			width: 45%;
-			text-align: left;
-			margin: -15em 0 0 0;
+		/*---For the Google Chart styling---*/
+		.chartBlock2 {
+		  //border: .5em solid $accent;
+		  margin: 36em 0 0 0;
+		  font-size: 1.5rem;
+		  height: auto;
+		  box-shadow: $castShadow;
+		  position: absolute;
+		  z-index: 1;
+
+			#chart_div {
+			  width: 100%;
+			  height: 500px;
+			}
+		}
+	}
+
+@media screen and (min-width: 1440px) and (max-width: 1919px) {
+    section[class*="col-"] {
+        width: 100%;
 		}
 
-		.para2 {
-			text-align: left;
-			width: 45%;
-		}
-
-		.para3 {
-			text-align: left;
-
-		}
-
-		.indentLet {
-			text-align:left;
-			margin: 1em 0 0 0;
-		}
-
-		article img {
-			border: .5em solid $accent;
-			margin: -53em 0 0 37em;
-			width: 50%;
+		.headerTitle {
+			padding: .5rem;
+			width: 100%;
+			margin: 3.8em 5em 0 0;
 			height: auto;
-			box-shadow: $castShadow;
-			position: relative;
 			z-index: 1;
+
+			h1 {
+				text-align: center;
+				font-size: calc(1em + 2vw + .5vh);
+				font-weight: bold;
+				line-height: 2rem;
+				text-shadow: $castShadow;
+				color: #234659;
+			}
 		}
-}
+
+		.educationInfo {
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin: -91em 0 0 13.5em;
+			padding: 1em;
+			background: #ffffff;
+			width: 70%;
+			height: auto;
+			border: .5em solid #234659;
+			box-shadow: $castShadow;
+			clear: both;
+		}
+
+		p {
+			margin-top: 1.5rem;
+			padding: .1rem;
+			letter-spacing: .1em;
+			color: #234659;
+			font-weight: 500;
+			font-size: calc(.4em + .5vw + .35vh);
+			text-align: center;
+
+			.focus-word {
+				color: $accent;
+			}
+		}
+
+		.capLetter::first-letter {
+			font-size: 150%;
+			font-weight: bold;
+		}
+
+		.indentLet::first-letter {
+			font-weight: bold;
+			color: #234659;
+		}
+
+		/*---For the Google Chart styling---*/
+		.chartBlock2 {
+		  //border: .5em solid $accent;
+		  margin: 36em 0 0 0;
+		  font-size: 1.5rem;
+		  height: auto;
+		  box-shadow: $castShadow;
+		  position: absolute;
+		  z-index: 1;
+
+			#chart_div {
+			  width: 100%;
+			  height: 500px;
+			}
+		}
+	}
+
+@media screen and (min-width: 1920px) and (max-width: 2048px) {
+    section[class*="col-"] {
+        width: 100%;
+		}
+
+		.headerTitle {
+			padding: .5rem;
+			width: 100%;
+			margin: 1.7em 5em 0 10em;
+			height: auto;
+			z-index: 1;
+
+			h1 {
+				font-size: calc(1em + 2vw + .5vh);
+				font-weight: bold;
+				line-height: 2rem;
+				text-shadow: $castShadow;
+				color: #234659;
+			}
+		}
+
+		.educationInfo {
+			display: inline-flex;
+			flex-wrap: wrap;
+			margin: -91em 0 0 6em;
+			padding: 1em;
+			background: linear-gradient(to bottom right,#ffffff 70%, #234659 15%);
+			width: 90%;
+			height: 50%;
+			border: .5em solid #234659;
+			box-shadow: $castShadow;
+			clear: both;
+		}
+
+		p {
+			margin-top: 2.5rem;
+			padding: .1rem;
+			letter-spacing: .1em;
+			color: #234659;
+			font-weight: 500;
+			font-size: calc(.5em + .5vw + .35vh);
+			text-align: center;
+
+			.focus-word {
+				color: $accent;
+			}
+		}
+
+		.capLetter::first-letter {
+			font-size: 150%;
+			font-weight: bold;
+		}
+
+		.indentLet::first-letter {
+			font-weight: bold;
+			color: #234659;
+		}
+
+		/*---For the Google Chart styling---*/
+		.chartBlock2 {
+		  //border: .5em solid $accent;
+		  margin: 36em 0 0 0;
+		  font-size: 1.5rem;
+		  height: auto;
+		  box-shadow: $castShadow;
+		  position: absolute;
+		  z-index: 1;
+
+			#chart_div {
+			  width: 100%;
+			  height: 500px;
+			}
+		}
+	}
