@@ -37,18 +37,21 @@ section.col-4 {
   width: 40.33%; }
 
 section.col-5 {
-  width: 40.33%; }
+  width: 50.33%; }
 
 section.col-6 {
-  width: 20.33%; }
+  width: 55%; }
 
-.col-7 {
-  width: 85.33%; }
+section.col-7 {
+  width: 60.33%; }
 
 .col-8 {
-  width: 8.33%; }
+  width: 85.33%; }
 
 .col-9 {
+  width: 8.33%; }
+
+.col-10 {
   width: 6.33%; }
 
 /*---I created a seperate .scss for the background to make it easier to change and play around with the design---*/
@@ -317,19 +320,19 @@ nav ul > li:nth-child(3) {
     text-align: center; } }
 /*---This is a design that is part of the background, but changes position and height in each pages---*/
 /*---The bar behind the information---*/
-.movingBgHome {
+.movingBgEducation {
   background-color: #234659;
-  margin-top: 1rem;
+  margin-top: 50rem;
   padding: 0;
   width: 100%;
-  height: 30rem;
+  height: 50rem;
   z-index: -1; }
 
 /*---MEDIA QUERY for small device---*/
 @media only screen and (min-width: 300px) and (max-width: 767px) {
-  .movingBgHome {
+  .movingBgEducation {
     background-color: #234659;
-    margin-top: 1rem;
+    margin-top: 50rem;
     padding: 0;
     width: 102%;
     height: 15rem;
@@ -348,13 +351,13 @@ nav ul > li:nth-child(3) {
     font-weight: bold;
     line-height: 3rem;
     text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    color: #ffffff; }
+    color: #234659; }
 
-.mainInfo {
-  margin: -22em 0 0 20em;
+.educationInfo {
+  margin: -90.6em 0 0 20em;
   padding: 1em;
-  background: -webkit-gradient(linear, left bottom, right top, color-stop(70%, #ffffff), color-stop(15%, #234659));
-  background: linear-gradient(to top right, #ffffff 70%, #234659 15%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(90%, #ffffff), color-stop(15%, #234659));
+  background: linear-gradient(to right, #ffffff 90%, #234659 15%);
   width: 80%;
   height: 65rem;
   border: .5em solid #234659;
@@ -384,19 +387,21 @@ p {
   font-weight: bold;
   color: #234659; }
 
-/*---For the image styling---*/
-article img {
-  border: 0.5em solid #4E96BE;
-  margin: 0 0 0 6em;
-  width: 120%;
+/*---For the Google Chart styling---*/
+.chartBlock2 {
+  margin: 3em 0 0 45.3em;
+  font-size: 1.5rem;
   height: auto;
   -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
           box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-  position: relative;
+  position: absolute;
   z-index: 1; }
+  .chartBlock2 #chart_div {
+    width: 110%;
+    height: 900px; }
 
 /*---MEDIA QUERY for small device---*/
-@media screen and (min-width: 300px) and (max-width: 767px) {
+@media only screen and (min-width: 300px) and (max-width: 767px) {
   [class*="col-"] {
     width: 100%;
     margin: 0;
@@ -414,20 +419,21 @@ article img {
       font-weight: bold;
       line-height: 2rem;
       text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-      color: #ffffff; }
+      color: #234659; }
 
-  .mainInfo {
+  .educationInfo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -9em 0 0 0;
+    margin: -46em 0 0 0;
     padding: 1em;
     background: -webkit-gradient(linear, left bottom, right top, color-stop(51%, #4E96BE), color-stop(15%, #234659));
     background: linear-gradient(to top right, #4E96BE 51%, #234659 15%);
     width: 100%;
     height: auto;
+    border: .5em solid #234659;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
     clear: both; }
@@ -451,58 +457,58 @@ article img {
     font-weight: bold;
     color: #234659; }
 
-  /*---For the image styling---*/
-  article img {
-    border: 0.4em solid #4E96BE;
-    margin: 1em 0 0 0;
-    width: 100%;
+  /*---For the Google Chart styling---*/
+  .chartBlock2 {
+    margin: 3em 0 0 0;
+    font-size: 1.5rem;
     height: auto;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    position: relative;
-    z-index: 1; } }
+    position: absolute;
+    z-index: 1; }
+    .chartBlock2 #chart_div {
+      width: 100%;
+      height: 900px; } }
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   section[class*="col-"] {
     width: 100%; }
 
   .headerTitle {
     padding: .5rem;
-    margin: 3em 0 0 6em;
-    z-index: 1;
-    height: auto; }
+    width: 100%;
+    margin: 3em 5em 0 0;
+    height: auto;
+    z-index: 1; }
     .headerTitle h1 {
       text-align: center;
       font-size: calc(1em + 2vw + .5vh);
       font-weight: bold;
       line-height: 2rem;
       text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-      color: #ffffff; }
+      color: #234659; }
 
-  .mainInfo {
+  .educationInfo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -16.3em 0 0 2.5em;
+    margin: -92em 0 0 0;
     padding: 1em;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(88%, #ffffff), color-stop(15%, #234659));
-    background: linear-gradient(to top right, #ffffff 88%, #234659 15%);
-    width: 90%;
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(51%, #4E96BE), color-stop(15%, #234659));
+    background: linear-gradient(to top right, #4E96BE 51%, #234659 15%);
+    width: 100%;
     height: auto;
     border: .5em solid #234659;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
     clear: both; }
 
-  .col-4 {
-    margin: 20em 0 0 0; }
-
   p {
-    margin-top: .8rem;
+    margin-top: 2.5rem;
     padding: .1rem;
     letter-spacing: .1em;
-    color: #112730;
+    color: #ffffff;
     font-weight: 500;
     font-size: 1.2rem;
     text-align: center; }
@@ -517,22 +523,18 @@ article img {
     font-weight: bold;
     color: #234659; }
 
-  .para1 {
-    margin: 5em 0 0 0; }
-
-  .para4 {
-    margin: 3em 0 0 0; }
-
-  /*---For the image styling---*/
-  article img {
-    border: 0.5em solid #4E96BE;
-    margin: -94em 0 0 0;
-    width: 100%;
+  /*---For the Google Chart styling---*/
+  .chartBlock2 {
+    margin: 36em 0 0 0;
+    font-size: 1.5rem;
     height: auto;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    position: relative;
-    z-index: 1; } }
+    position: absolute;
+    z-index: 1; }
+    .chartBlock2 #chart_div {
+      width: 100%;
+      height: 500px; } }
 /*---MEDIA QUERY for New tablets---*/
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
   section[class*="col-"] {
@@ -540,43 +542,39 @@ article img {
 
   .headerTitle {
     padding: .5rem;
-    text-align: center;
-    margin: 5em 0 0 10em;
-    z-index: 1;
-    height: auto; }
+    width: 100%;
+    margin: 3em 5em 0 0;
+    height: auto;
+    z-index: 1; }
     .headerTitle h1 {
       text-align: center;
       font-size: calc(1em + 2vw + .5vh);
       font-weight: bold;
       line-height: 2rem;
       text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-      color: #ffffff; }
+      color: #234659; }
 
-  .mainInfo {
+  .educationInfo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -9rem 0 0 3rem;
+    margin: -91em 0 0 6.5em;
     padding: 1em;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(88%, #ffffff), color-stop(15%, #234659));
-    background: linear-gradient(to top right, #ffffff 88%, #234659 15%);
-    width: 90%;
+    background: #ffffff;
+    width: 80%;
     height: auto;
     border: .5em solid #234659;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
     clear: both; }
 
-  .col-4 {
-    margin: 20em 0 0 0; }
-
   p {
-    margin-top: .8rem;
+    margin-top: 1rem;
     padding: .1rem;
     letter-spacing: .1em;
-    color: #112730;
+    color: #234659;
     font-weight: 500;
     font-size: 1.2rem;
     text-align: center; }
@@ -591,67 +589,59 @@ article img {
     font-weight: bold;
     color: #234659; }
 
-  .para1 {
-    margin: 10em 0 0 0; }
-
-  .para4 {
-    margin: 2em 0 0 0; }
-
-  /*---For the image styling---*/
-  article img {
-    border: 0.5em solid #4E96BE;
-    margin: -92em 0 0 0;
-    width: 100%;
+  /*---For the Google Chart styling---*/
+  .chartBlock2 {
+    margin: 36em 0 0 0;
+    font-size: 1.5rem;
     height: auto;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    position: relative;
-    z-index: 1; } }
+    position: absolute;
+    z-index: 1; }
+    .chartBlock2 #chart_div {
+      width: 100%;
+      height: 500px; } }
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
   section[class*="col-"] {
     width: 100%; }
 
   .headerTitle {
     padding: .5rem;
-    text-align: center;
-    margin: 5em 0 0 5em;
-    z-index: 1;
-    height: auto; }
+    width: 100%;
+    margin: 3.8em 5em 0 0;
+    height: auto;
+    z-index: 1; }
     .headerTitle h1 {
       text-align: center;
       font-size: calc(1em + 2vw + .5vh);
       font-weight: bold;
       line-height: 2rem;
       text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-      color: #ffffff; }
+      color: #234659; }
 
-  .mainInfo {
+  .educationInfo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -20rem 0 0 3rem;
+    margin: -91em 0 0 13.5em;
     padding: 1em;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(88%, #ffffff), color-stop(15%, #234659));
-    background: linear-gradient(to top right, #ffffff 88%, #234659 15%);
-    width: 90%;
+    background: #ffffff;
+    width: 70%;
     height: auto;
     border: .5em solid #234659;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
     clear: both; }
 
-  .col-4 {
-    margin: 20em 0 0 0; }
-
   p {
-    margin-top: .8rem;
+    margin-top: 1.5rem;
     padding: .1rem;
     letter-spacing: .1em;
-    color: #112730;
+    color: #234659;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: calc(.4em + .5vw + .35vh);
     text-align: center; }
     p .focus-word {
       color: #4E96BE; }
@@ -664,78 +654,59 @@ article img {
     font-weight: bold;
     color: #234659; }
 
-  .para1 {
-    font-size: calc(.5em + .2vw + .5vh);
-    width: 45%;
-    text-align: left;
-    margin: -15em 0 0 0; }
-
-  .para2 {
-    text-align: left;
-    width: 45%; }
-
-  .para3 {
-    text-align: left; }
-
-  .indentLet {
-    text-align: left;
-    margin: 1em 0 0 0; }
-
-  /*---For the image styling---*/
-  article img {
-    border: 0.5em solid #4E96BE;
-    margin: -53em 0 0 37em;
-    width: 50%;
+  /*---For the Google Chart styling---*/
+  .chartBlock2 {
+    margin: 36em 0 0 0;
+    font-size: 1.5rem;
     height: auto;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    position: relative;
-    z-index: 1; } }
+    position: absolute;
+    z-index: 1; }
+    .chartBlock2 #chart_div {
+      width: 100%;
+      height: 500px; } }
 @media screen and (min-width: 1920px) and (max-width: 2048px) {
   section[class*="col-"] {
     width: 100%; }
 
   .headerTitle {
     padding: .5rem;
-    text-align: center;
-    margin: 3.8em 0 0 7em;
-    z-index: 1;
-    height: auto; }
+    width: 100%;
+    margin: 1.7em 5em 0 10em;
+    height: auto;
+    z-index: 1; }
     .headerTitle h1 {
-      text-align: center;
       font-size: calc(1em + 2vw + .5vh);
       font-weight: bold;
       line-height: 2rem;
       text-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-      color: #ffffff; }
+      color: #234659; }
 
-  .mainInfo {
+  .educationInfo {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin: -20rem 0 0 6.2rem;
+    margin: -91em 0 0 6em;
     padding: 1em;
-    background: -webkit-gradient(linear, left bottom, right top, color-stop(88%, #ffffff), color-stop(15%, #234659));
-    background: linear-gradient(to top right, #ffffff 88%, #234659 15%);
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(70%, #ffffff), color-stop(15%, #234659));
+    background: linear-gradient(to bottom right, #ffffff 70%, #234659 15%);
     width: 90%;
-    height: auto;
+    height: 50%;
     border: .5em solid #234659;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
     clear: both; }
 
-  .col-4 {
-    margin: 20em 0 0 0; }
-
   p {
-    margin-top: .8rem;
+    margin-top: 2.5rem;
     padding: .1rem;
     letter-spacing: .1em;
-    color: #112730;
+    color: #234659;
     font-weight: 500;
-    font-size: 1.2rem;
+    font-size: calc(.5em + .5vw + .35vh);
     text-align: center; }
     p .focus-word {
       color: #4E96BE; }
@@ -748,33 +719,18 @@ article img {
     font-weight: bold;
     color: #234659; }
 
-  .para1 {
-    font-size: calc(.4em + .2vw + .5vh);
-    width: 50%;
-    text-align: left;
-    margin: -15em 0 0 0; }
-
-  .para2 {
-    text-align: left;
-    width: 45%; }
-
-  .para3 {
-    text-align: left; }
-
-  .indentLet {
-    text-align: left;
-    margin: 1em 0 0 0; }
-
-  /*---For the image styling---*/
-  article img {
-    border: 0.5em solid #4E96BE;
-    margin: -41em 0 0 56em;
-    width: 43%;
-    height: 18%;
+  /*---For the Google Chart styling---*/
+  .chartBlock2 {
+    margin: 36em 0 0 0;
+    font-size: 1.5rem;
+    height: auto;
     -webkit-box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
             box-shadow: rgba(109, 128, 137, 0.1) -5px 6px 4px -1px;
-    position: relative;
-    z-index: 1; } }
+    position: absolute;
+    z-index: 1; }
+    .chartBlock2 #chart_div {
+      width: 100%;
+      height: 500px; } }
 /*---FOOTER SECTION---*/
 /*--Footer Section .scss--*/
 footer {
@@ -982,4 +938,4 @@ a:active {
   [class*="col-"] {
     width: 100%; } }
 
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=education.css.map */

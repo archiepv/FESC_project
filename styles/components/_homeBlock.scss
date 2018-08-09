@@ -1,0 +1,21 @@
+/*---The bar behind the information---*/
+.movingBgHome {
+	background-color: #234659;
+	margin-top: 1rem;
+	padding: 0;
+	width: 100%;
+	height: 30rem;
+	z-index: -1;
+}
+
+/*---MEDIA QUERY for small device---*/
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+	.movingBgHome {
+		background-color: #234659;
+		margin-top: 1rem;
+		padding: 0;
+		width: 102%;
+		height: 15rem;
+		z-index: -1;
+	}
+}

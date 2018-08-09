@@ -1,0 +1,15 @@
+/*---For the Google Chart styling---*/
+.chartBlock {
+  //border: .5em solid $accent;
+  margin: -29em 0 0 45.3em;
+  font-size: 1.5rem;
+  height: auto;
+  box-shadow: $castShadow;
+  position: absolute;
+  z-index: 1;
+}
+
+#chart_div {
+  width: 100%;
+  height: 600px;
+}
