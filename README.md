@@ -29,7 +29,6 @@ UPDATES:
 /images
 -Updated the background images
 
-TO DO:
--google charts with API
--add buttons for google charts when the screen is small
--keep reviewing the layouts until you are 100% happy about it
+ADDED:
+
+JS framework testing "v-for".
