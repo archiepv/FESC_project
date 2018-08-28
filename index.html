@@ -61,19 +61,13 @@
 					become a world leader in energy research, education, technology, and energy systems analysis. In so doing, the consortium shall:
 				</p>
 
-
-					<p class="para4 indentLet">(a) Coordinate and initiate increased collaborative interdisciplinary energy research among the universities and the energy industry.</p>
-
-					<p class="para5 indentLet">(b) Assist in the creation and development of a Florida-based energy technology industry through efforts that would expedite commercialization
-						of innovative energy technologies by taking advantage of the energy expertise within the State University System, high-technology incubators,
-						industrial parks, and industry-driven research centers.
-					</p>
-
-					<p class="para6 indentLet">(c) Provide a state resource for objective energy systems analysis.
-					</p>
-
-					<p class="para7 indentLet">(d) Develop education and outreach programs to prepare a qualified energy workforce and informed public.
-					</p>
+				<div id="list">
+					<ol>
+	 					<li v-for="listings">
+		 					{{ list.text }}
+	 					</li>
+ 					</ol>
+				</div>
 
 			</section>
 
@@ -89,7 +83,8 @@
 			<a class="col-9 siteMap" href="#">Site Map</a>
 		</footer>
 
-		<script></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<script src="./scripts/list.js"></script>
 	</body>
 
 </html>
